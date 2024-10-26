@@ -1,7 +1,7 @@
 
 ## Preview
 
-![Preview Image](Frame 1.png)
+![Preview Image](preview.png)
 
 [Click here to view the live website](https://shahrukkabir.github.io/developer-portfolio/)
 
