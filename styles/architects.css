@@ -255,6 +255,18 @@ main>section {
     margin-bottom: 50px;
 }
 
+.footer {
+  background-color: #fff4e6; 
+  padding: 20px 30px;
+  text-align: center;
+  color: #555; 
+  font-size: 18px;
+  border-radius: 5px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
 
