@@ -1,37 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* shared styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
 
-.text-primary{
+.text-primary {
     color: #FF900E;
 }
 
 /* dark 02 */
-.text-gray{
+.text-gray {
     color: #424242;
 }
 
 /* dark03 */
-.text-light-gray{
+.text-light-gray {
     color: #727272;
+    padding: 0px 35px 0px 35px;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 600px;
 }
 
-.bg-light{
+.text-light-gray2 {
+    color: #727272;
+    margin: 50px auto;
+}
+
+.bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #FF900E;
     color: white;
     padding: 20px 25px;
@@ -41,110 +54,121 @@
     border: none;
 }
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-main > section{
-    margin-top: 130px;
+main>section {
+    margin-top: 100px;
 }
 
-.section-title{
+.section-title {
     font-size: 2.8rem;
     font-weight: 700;
+    text-align: center;
+    padding: 0px 35px 0px 35px;
+}
+
+.section-title2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding: 0px 35px 0px 35px;
 }
 
 /* header styles */
 
 /* navbar related styles */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
 
-.brand{
+.brand {
     font-weight: 700;
     font-size: 3rem;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
     margin-right: 30px;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     font-weight: 500;
 }
 
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 /* banner related styles */
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.banner-title{
+.banner-title {
     font-weight: 700;
     font-size: 4rem;
 }
 
-.banner-image{
+.banner-image {
     width: 100%;
 }
 
 /* team and feature related styles */
-.teams{
+.teams {
     align-items: center;
 }
 
-.team-img-container{
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
-.our-features{
+.our-features {
     margin-left: 130px;
     max-width: 530px;
 }
 
-#quick-list{
+#quick-list {
     font-weight: 500;
 }
 
 /* features section related styles */
 
-.features{
+.features {
     gap: 140px;
 }
 
-#feature-section-title{
+#feature-section-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
 
-.feature-card{
+.feature-card {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
 }
 
-.feature-card .feature-title{
+.feature-card .feature-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 0px;
+    /* text-align: center; */
 }
 
-#experience-badge{
+#experience-badge {
     padding: 45px 42px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -152,23 +176,24 @@ main > section{
     margin-top: -100px;
 }
 
-#experience-year{
+#experience-year {
     font-size: 4rem;
     font-weight: 700;
 }
 
-.featured-architect img{
+.featured-architect img {
     width: 100%;
 }
 
 /* some facts related styles */
-.facts-container{
+.facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.fact-card{
+
+.fact-card {
     border: 1px solid #FF900E;
-    width: 240px;
+    width: 280px;
     height: 240px;
     border-radius: 8px;
     text-align: center;
@@ -176,94 +201,129 @@ main > section{
     justify-content: center;
 }
 
-.fact-number{
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-.fact-name{
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
 
-.fact-description{
-    max-width: 540px;
-}
 
 
 /* sponsor related styles */
-.sponsor-info{
+.sponsor-info {
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
 }
 
-.sponsor-companies{
+.sponsor-companies {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.sponsor-companies img{
+.sponsor-companies img {
     filter: grayscale(100%);
 }
 
+.our-sponsors {
+    margin-bottom: 50px;
+}
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, 
-    .nav-links, 
+
+    .navbar,
+    .nav-links,
     .features,
-    .teams{
+    .teams {
         flex-direction: column;
     }
 
-    .team-img-container, 
-    .facts-container, 
-    .sponsor-companies
-    {
+    .team-img-container,
+    .facts-container,
+    .sponsor-companies {
         grid-template-columns: 1fr;
     }
 
-    .facts-container{
+    .section-title2 {
+        font-size: 2.5rem;
+    }
+
+    #feature-you-love {
+        color: #727272;
+        padding: 0px 35px 0px 35px;
+        margin: 30px auto;
+        max-width: 600px;
+    }
+
+    .facts-container {
         justify-items: center;
         gap: 24px;
     }
 
-    .sponsor-companies{
+    #button-10 {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    #girl-img {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .sponsor-companies {
         justify-items: center;
         gap: 50px;
     }
 
-    .our-features{
+    .our-features {
         margin-left: 20px;
     }
 
-    #experience-badge{
-        margin-top: 20px;
-        margin-left: 20px;
+    #experience-badge {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    #experience-year {
+        font-size: 2.5rem;
     }
 }
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams, .features{
+
+    .teams,
+    .features {
         flex-direction: column;
     }
-    .our-features{
+
+    .our-features {
         margin: 50px auto;
     }
 
-    .sponsor-companies, .facts-container {
+    .sponsor-companies,
+    .facts-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
     }
 
-    #experience-badge{
+    #experience-badge {
         margin-top: 20px;
         margin-left: 20px;
+    }
+
+    #experience-year {
+        font-size: 2.5rem;
+        font-weight: 700;
     }
 }
